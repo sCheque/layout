@@ -180,28 +180,27 @@ ul {
   margin-bottom: 46px;
 }
 
-.hero-title {
-  display: flex;
+.hero-body {
   font-family: var(--font-anton);
   font-size: 120px;
-  line-height: 1.1;
-  text-transform: uppercase;
+  line-height: 1.1;  
 }
 
-.hero-title-line1 {
-  display: block;
-  padding-right: 50px;
-  padding-bottom: 50px;
+.hero-item:nth-child(even) .hero-card {
+  flex-direction: row-reverse;
 }
 
-.hero-title-line2 {
-  display: block;
-  padding-left: 210px;
+
+.hero-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: clamp(10px, 2.6vw,50px);
 }
 
-.hero-main-image2 {
-  padding-left: 50px;
-  padding-bottom: 50px;
+.hero-card-title .hero-cta {
+  font-family: var(--font-primary);
+  margin-left: 180px;
 }
 
 .hero-cta {
@@ -210,9 +209,8 @@ ul {
   color: var(--color-text-light);
   padding: 30px 60px;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 100;
   margin-top: 60px;
-  margin-left: 1000px;
 }
 
 /* Brands Section */
@@ -351,7 +349,8 @@ ul {
 .newsletter-section {
   background-color: var(--color-secondary);
   color: var(--color-text-light);
-  padding: 80px 0;
+  padding: 15px 0;
+  height: 480px;
   position: relative;
   overflow: hidden;
 }
@@ -384,7 +383,9 @@ ul {
 
 .newsletter-form {
   display: flex;
+  width: 325px;
   height: 60px;
+  gap: 12px;
 }
 
 .newsletter-input {
@@ -393,8 +394,8 @@ ul {
   padding: 0 16px;
   font-size: 16px;
   font-family: var(--font-primary);
+  width: 325px;
   color: #5b6766;
-  min-width: 200px;
 }
 
 .newsletter-button {
@@ -412,8 +413,8 @@ ul {
 }
 
 .newsletter-image {
-  width: 484px;
-  height: 484px;
+  width: 420px;
+  height: 420px;
   transform: rotate(10deg);
 }
 
@@ -518,11 +519,28 @@ ul {
 
 /* Responsive Design */
 @media (max-width: 1200px) {
+  .hero-card-title {
+    font-size: 74px;
+  }
+
+  .hero-card-title .hero-cta {
+    display: block;
+    margin-left: 50px;
+    text-align: center;
+    width: 200px;
+    padding: 25px;
+  }
+
+  .hero-main-image {
+    width: 400px;
+    height: 190px;
+    margin: 15px;
+  }
+
   .hero-title {
     font-size: 10vw;
   }
 
-  .hero-title-line2,
   .hero-cta {
     padding-left: 100px;
     margin-left: 100px;
@@ -540,24 +558,47 @@ ul {
     text-align: center;
   }  
 
-  .hero-text {
-    padding-top: 12px;
+  .hero-card-title {
+    font-size: 74px;
   }
 
-  .hero-title-line1
-   {
-    padding-right: 0px;
+  .hero-card-title .hero-cta {
+    display: block;
+    margin-left: 50px;
+    text-align: center;
+    width: 200px;
+    padding: 25px;
   }
 
-  .hero-title-line2
-   {
-    padding-left: 12px;
-    margin-left: 0;
+  .hero-main-image {
+    width: 300px;
+    height: 170px;
   }
+
+.newsletter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; 
+}
 
   .newsletter-container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .newsletter-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .newsletter-image-wrapper {
@@ -582,6 +623,22 @@ ul {
 }
 
 @media (max-width: 768px) {
+
+  .hero-card-title {
+    font-size: 74px;
+  }
+
+  .hero-card-title .hero-cta{
+    display: block;
+    margin-left: 10px;
+    text-align: center;
+    padding: 25px 50px;
+  }
+
+  .hero-main-image {
+    display: none;
+  }
+
   .brands-title,
   .collections-title {
     font-size: 36px;

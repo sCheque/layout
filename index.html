@@ -44,22 +44,69 @@
             </header>
 
             <!-- Hero Content -->
-            <div class="hero-content">
+            <!-- <div class="hero-content">
                 <div class="hero-text">
                     <p class="hero-subtitle">Grab Your Fav Shoes</p>
-                    <h1 class="hero-title">
-                        <div>
-                            <span class="hero-title-line1">Best Shoe's</span>
-                            <img src="images/Rectangle 40069.png" alt="Collection of shoes" class="hero-main-image1">
-                        </div>
-                        <div>
-                            <img src="images/Rectangle 40070.png" alt="Collection of shoes" class="hero-main-image2">
-                            <span class="hero-title-line2">Collections</span>
-                        </div>
-                    </h1>
+                    <ul class="hero-body">
+                        <li>
+                            <div class="hero-item">
+                                <span class="hero-title-line1">Best Shoe's</span>
+                                <img 
+                                    src="images/Rectangle 40070.png" 
+                                    alt="Collection of shoes" 
+                                    class="hero-main-image1"
+                                    width="558" height="305" loading="lazy"
+                                > 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hero-item">
+                                <span class="hero-title-line2">Collections</span>
+                                <img 
+                                    src="images/Rectangle 40069.png" 
+                                    alt="Collection of shoes" 
+                                    class="hero-main-image2"
+                                    width="558" height="305" loading="lazy"
+                                >
+                            </div>
+                        </li>
+                    </ul>
                     <a href="#" class="hero-cta">BUY NOW</a>
                 </div>
-            </div>
+            </div> -->
+            <p class="hero-subtitle">Grab Your Fav Shoes</p>
+            <ul class="hero-body">
+                <li class="hero-item">
+                    <!-- + центрирование элемента по горизонати и ограничение длины контента -->
+                    <div class="hero-card container">
+                        <div class="hero-card-title">Best Shoe's</div>
+                        <img 
+                            src="images/Rectangle 40070.png" 
+                            alt="Collection of shoes" 
+                            class="hero-main-image"
+                            width="558" height="305" loading="lazy"
+                         > 
+                    </div>                    
+                </li>
+                <li class="hero-item">
+                    <!-- + центрирование элемента по горизонати и ограничение длины контента -->
+                    <div class="hero-card container">
+                        
+                        <div class="hero-card-title">
+                            Collections
+                            <a href="#" class="hero-cta">BUY NOW</a>
+                        </div>
+                        
+                        <img 
+                            src="images/Rectangle 40069.png" 
+                            alt="Collection of shoes" 
+                            class="hero-main-image"
+                            width="558" height="305" loading="lazy"
+                         > 
+                    </div>
+                </li>
+            </ul>
+            
         </div>
     </section>
 
@@ -175,7 +222,7 @@
     <section class="newsletter-section">
         <div class="container newsletter-container">
             <div class="newsletter-content">
-                <h2 class="newsletter-title">Get The Best Shoes Updates For You</h2>
+                <p class="newsletter-title">Get The Best Shoes Updates For You</p>
                 <p class="newsletter-description">Fringilla turpis non phasellus est morbi arcu nulla. Vestibulum tellus aliquet risus nunc non tortor nulla blandit um tellus aliquimperdiet.</p>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Your email address" class="newsletter-input" required>
